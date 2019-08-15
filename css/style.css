@@ -1,0 +1,284 @@
+@font-face {
+	font-family: DancingScript;
+	src: url(../fonts/DancingScript-Regular.ttf);
+}
+
+body {
+  font-family: DancingScript, arial, helvetica;
+  font-size: 1em;
+  background-color: #02010a;
+	margin-left: auto;
+	margin-right: auto;
+  width: 90%;
+	max-width: 900px;
+}
+
+#cabecera{
+  background-color: #5b7989;
+  color: white;
+  border-radius: 10px 10px 0px 0px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.contenedor_titulo {
+	padding: 1vh 1vw 1vh 1vw;
+  text-shadow: 2px 2px 2px #02010a;
+}
+
+.contenedor_menu_principal {
+	padding: 1vh 1vw 1vh 1vw;
+}
+
+a:link, a:visited {
+  text-decoration: underline;
+}
+
+a.current:link, a.current:visited {
+    text-decoration: none;
+}
+
+#contenido {
+	margin-left: auto;
+	margin-right: auto;
+	justify-content: center;
+}
+
+.imagen_principal {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	align-items: center;
+	background-color: #82c3a6;
+}
+
+.imagen_principal img {
+	width: 50%;
+	margin: 5vh auto;
+	box-shadow: 2px 2px #02010a;
+}
+
+.imagenes_secundarias {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	background-color: #d5c75f;
+}
+
+.imagenes_secundarias img {
+	width: 35%;
+	margin: 5vh auto;
+	border: 1px solid black;
+	box-shadow: 2px 2px #02010a;
+}
+
+@keyframes imagen_izq-animacion {
+	from {
+		box-shadow: 2px 2px #02010a;
+	}
+	to {
+		box-shadow: 2px 2px #82c3a6;
+		transform: rotate(10deg);
+	}
+}
+
+#imagen_izq:hover {
+	animation: imagen_izq-animacion 1s;
+}
+
+@keyframes imagen_der-animacion {
+	from {
+		position: relative;
+		left: 0px;
+		bottom: 0px;
+		box-shadow: 2px 2px #02010a;
+	}
+	to {
+		position: relative;
+		left: 20px;
+		bottom: 5px;
+		box-shadow: 2px 2px #82c3a6;
+	}
+}
+
+#imagen_der:hover {
+	animation-name: imagen_der-animacion;
+	animation-duration: 1s;
+}
+
+#pie_de_pagina {
+	background-color: #C6d5c5;
+  border-radius: 0px 0px 10px 10px;
+	padding: 1vh 1vw;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items:  baseline;
+	align-content: center;
+	text-align: center;
+	justify-content: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.contacto {
+	width: 20%;
+	margin: 0% 2.5% 0% 2.5%;
+}
+
+.terminos_y_condiciones {
+	width: 20%;
+	margin: 0% 2.5% 0% 2.5%;
+}
+
+.redes_sociales {
+	width: 20%;
+	margin: 0% 2.5% 0% 2.5%;
+}
+
+.derechos {
+	width: 20%;
+}
+
+.imagenes_paisajes {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	background-color: #d5c75f;
+	margin-left: auto;
+	margin-right: auto;
+	justify-content: center;
+	padding: 2vh 1vw;
+}
+
+.imagenes_paisajes img {
+	width: 100%;
+	box-shadow: 2px 2px #02010a;
+}
+
+.imagenes_paisajes div {
+	text-align: center;
+	padding: 1%;
+	margin: 1%;
+	width: 28%;
+}
+
+.imagenes_retratos {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	background-color: #d5c75f;
+	margin-left: auto;
+	margin-right: auto;
+	justify-content: center;
+	padding: 2vh 1vw;
+}
+
+.imagenes_retratos img {
+	width: 100%;
+	box-shadow: 2px 2px #02010a;
+}
+
+.imagenes_retratos div {
+	text-align: center;
+	padding: 1%;
+	margin: 1%x;
+	width: 28%;
+}
+
+#imagen_1{
+	-webkit-filter: blur(10px);
+}
+
+#imagen_2{
+	-webkit-filter: grayscale(100%);
+}
+
+#imagen_3{
+	-webkit-filter: sepia(90%);
+}
+
+#imagen_4{
+	-webkit-filter: grayscale(100%);
+}
+
+#imagen_5{
+	-webkit-filter: none;
+}
+
+#imagen_6{
+	-webkit-filter: grayscale(100%);
+}
+
+@media (max-width:900px) {
+	body {
+		width: 100%;
+		margin: auto;
+	}
+	#cabecera {
+		display: block;
+		text-align: center;
+	}
+	.imagen_principal img {
+		width: 90%;
+		margin-left: auto;
+		margin-right: auto;
+		justify-content: center;
+	}
+	.imagenes_secundarias {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+	.imagenes_secundarias img {
+		width: 90%;
+		margin-left: auto;
+		margin-right: auto;
+		justify-content: center;
+	}
+	#pie_de_pagina {
+		display: flex;
+		flex-direction: column;
+		align-content: center;
+		text-align: center;
+	}
+	.contacto{
+		width: 90%;
+	}
+	.terminos_y_condiciones{
+		width: 90%;
+	}
+	.redes_sociales{
+		width: 90%;
+	}
+	.derechos{
+		width: 90%;
+	}
+	.imagenes_retratos {
+		display: block;
+	}
+	.imagenes_retratos div {
+		width: 90%;
+		margin-left: auto;
+		margin-right: auto;
+		justify-content: center;
+	}
+	.imagenes_paisajes {
+		display: block;
+	}
+	.imagenes_paisajes div {
+		width: 90%;
+		margin-left: auto;
+		margin-right: auto;
+		justify-content: center;
+	}
+}
+
+#contenido_terminos_y_condiciones {
+	background-color: white;
+  color: black;
+	padding: 1vh 1vw;
+}
